@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #273733;
+    color: hsl(165, 17%, 78%);
+    font-family: 'Barlow Condensed', sans-serif;
+    width: 768px;
+    margin: 32px auto;
+}
+h1{
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+
+nav{
+    margin: 24px 16px;
+}
+    nav button{
+        background-color: hsl(165, 17%, 78%);
+        color: #273733;
+        width: 96px;
+        padding: 8px;
+        border: none;
+        border-radius: 8px;
+        margin: 0px 8px;
+        cursor: pointer;
+        transition: 500ms;
+    }
+    nav button:hover{
+        background-color: hsl(165, 37%, 67%);
+        box-shadow: 0px 0px 16px hsl(165, 37%, 67%);
+    }
