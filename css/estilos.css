@@ -29,7 +29,7 @@ nav{
     {
         background-color: hsl(165, 17%, 78%);
         color: #273733;
-        width: 96px;
+        width: 104px;
         padding: 8px;
         border: none;
         border-radius: 8px;
@@ -47,4 +47,19 @@ nav{
     padding: 8px;
     border-radius: 8px;
     background-color: hsl(165, 17%, 25%);
+}
+
+#caja{
+    background-color: #bfbfbf;
+    color: #273733;
+    width: 256px;
+    height: 256px;
+    border-radius: 8px;
+    margin: 32px 0px;
+    padding: 32px;
+    font-size: 3em;
+}
+
+.parrafo{
+    margin: 24px;
 }
