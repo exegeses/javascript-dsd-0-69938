@@ -10,9 +10,13 @@
     <h1>Funciones en Javascript</h1>
 
     <nav>
-        <button onclick="pintarRosa()">rosa</button>
-        <button onclick="pintarCeleste()">celeste</button>
-        <button onclick="pintarVerde()">verde</button>
+        <button onclick="pintar( 'pink', 'Rosa' )">rosa</button>
+        <button onclick="pintar( 'lightblue', 'Celeste' )">celeste</button>
+        <button onclick="pintar( 'rgb(0, 148, 57)', 'Verde' )">verde</button>
+    </nav>
+    <nav>
+        <input type="color" id="picker" value="#92fd70">
+        <button onclick="colorPicker()">pintar!</button>
     </nav>
     <div id="caja"></div>
 

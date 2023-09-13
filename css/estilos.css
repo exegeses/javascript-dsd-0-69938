@@ -63,3 +63,11 @@ nav{
 .parrafo{
     margin: 24px;
 }
+#picker{
+    width: 64px;
+    height: 40px;
+    position: relative;
+    top: 10px;
+    border-radius: 8px;
+    border: none;
+}

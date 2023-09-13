@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #6042DD;
+    font-weight: 100;
+}
+
+main{
+    padding-top: 120px;
+    width: 500px;
+    margin: auto;
+}
+
+    #contenedor{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .cajas{
+        height: 96px;
+        padding-top: 24px;
+        background-color: #8067E4;
+        width: 24%;
+        border-radius: 8px;
+    }
+    #txtDias,
+    #txtHoras,
+    #txtMinutos,
+    #txtSegundos
+    {
+        font-size: 1.3em;
+        height: 64px;
+    }
+
+
+    .textos{
+        font-size: .6em;
+        width: 100%;
+    }
