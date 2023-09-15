@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f7f4f1;
+    font-family: 'Titillium Web', sans-serif;
+    color: #707070;
+    font-size: 1.2em;
+}
+header{
+    background-color: #e10600;
+}
+    .container{
+        width: 1024px;
+        margin: auto;
+    }
+    header img{
+        width: 120px;
+        margin: 24px 0px;
+    }
+main{
+    width: 1024px;
+    margin: 24px auto;
+}
+    h1{
+        margin-bottom: 24px;
+    }
+    h2{
+        width: 100%;
+    }
+    nav a{
+        text-decoration: none;
+        padding: 8px 12px;
+        margin: 8px 2px 8px 2px;
+        background-color: #f8f8f8;
+        color: #707070;
+        border-radius: 8px 8px 0 0;
+        transition: .3s;
+    }
+    nav a:hover{
+        color: #343434;
+        background-color: #fff;
+    }
+    #redbull,
+    #ferrari,
+    #mercedes,
+    #amartin
+    {
+        padding: 32px 12px 64px 12px;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .data img{
+        width: 300px;
+        margin-top: 24px;
+    }
+    .pilot{
+        width: 300px;
+        height: 300px;
+        margin: 8px;
+        background-position: center 16px;
+        background-repeat: no-repeat;
+        background-size: 300px;
+        transition: .5s;
+    }
+    #verstappen{
+        background-image: url(../imgs/verstappen.jpg);
+    }
+    #perez{
+        background-image: url(../imgs/perez.jpg);
+    }
+    #leclerc{
+        background-image: url(../imgs/leclerc.jpg);
+    }
+    #sainz{
+        background-image: url(../imgs/sainz.jpg);
+    }
+    #hamilton{
+        background-image: url(../imgs/hamilton.jpg);
+    }
+    #russel{
+        background-image: url(../imgs/russell.jpg);
+    }
+    #falonso{
+        background-image: url(../imgs/alonso.jpg);
+    }
+    #stroll{
+        background-image: url(../imgs/stroll.jpg);
+    }
+    .pilot:hover{
+            background-size: 324px;
+    }
+    .pilot figcaption{
+        margin-top: 300px;
+        padding: 8px;
+        font-size: 32px;
+        height: 72px;
+        transition: .5s;
+    }
+    .pilot:hover figcaption{
+        background-color: #343434;
+        color: #fff;
+    }
+    .pilot figcaption span{
+        margin: 12px;
+    }

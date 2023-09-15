@@ -1,0 +1,11 @@
+body{
+    width: 768px;
+    margin: 32px auto;
+    background-image: url(../imgs/bg.jpg);
+    background-position: 0 -500px;
+}
+img[alt="phantom"]{
+    position: relative;
+    left: 0px;
+    top: calc( 500px - 96px ) ;
+}

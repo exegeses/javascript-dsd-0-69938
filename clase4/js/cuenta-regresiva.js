@@ -3,13 +3,25 @@ const txtDias = document.querySelector('#txtDias');
 const txtHoras = document.querySelector('#txtHoras');
 const txtMinutos = document.querySelector('#txtMinutos');
 const txtSegundos = document.querySelector('#txtSegundos');
+const h1 = document.querySelector('h1');
+
+let intervalo = '';
 
 //creamos función de control
+function dosDigitos( numero )
+{
+    if( numero < 10 ){
+        numero = '0'+ numero;
+    }
+    return numero; //string
+}
+
 function countdown()
 {
     //creamos objetos de fecha
     const ahora = new Date();
     const final = new Date(2023, 9, 13);
+    /* const final = new Date(2023, 8, 15, 14, 5);*/
     console.log(ahora);
     console.log(final);
     //diferencia entre fechas
@@ -43,6 +55,19 @@ function countdown()
     segundos = segundos % 60;
         console.log( segundos );
 
+    if( dias <= 0 && horas <= 0  && minutos <= 0 && segundos <= 0 ){
+        //dejar de actualizar
+        clearInterval( intervalo );
+        h1.innerText = 'Oferta finalizada';
+        dias = 0;
+        horas = 0;
+        minutos = 0;
+        segundos = 0;
+    }
+
+    horas = dosDigitos( horas );
+    minutos = dosDigitos( minutos );
+    segundos = dosDigitos( segundos );
 
     /* imprimimos en los span */
     txtSegundos.innerText = segundos;
@@ -54,4 +79,4 @@ function countdown()
 //invocamos la función
 countdown();
 //actualizamos el llamado a la función
-setInterval( countdown, 1000 )
+intervalo = setInterval( countdown, 1000 );
