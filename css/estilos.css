@@ -71,3 +71,38 @@ nav{
     border-radius: 8px;
     border: none;
 }
+#contenedor{
+    background-color: hsl(165, 17%, 60%);
+    width: 450px;
+    margin: auto;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+    #contenedor img{
+        cursor: pointer;
+    }
+    #txt2{
+        color: #273733;
+        font-size: 2.5em;
+        display: block;
+        width: 256px;
+        text-align: center;
+    }
+
+#lista{
+    /* list-style-type: none; */
+    list-style-image: url(../clase6/imgs/ice-cream.png);
+}
+    #lista li{
+        padding: 8px;
+        font-size: 24px;
+        transition: .5s;
+    }
+    #lista li:hover{
+        font-size: 32px;
+        background-color: hsl(165, 17%, 28%);
+    }
